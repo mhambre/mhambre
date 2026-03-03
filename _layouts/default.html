@@ -1,0 +1,67 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+  <div id="particles-js"></div>
+  {% include navbar.html %}
+  {% include showcase.html %}
+  {% include about.html %}
+  {% include contact.html %}
+  <!--Footer begins here-->
+  {% include footer.html %}
+</body>
+<script>
+  (function () {
+    var navItems = document.querySelectorAll('.navbar-item');
+    var sectionMap = {
+      hero: '/',
+      about: '/#about',
+      contact: '/#contact'
+    };
+    var viewOffset = 200;
+
+    function clearActive() {
+      navItems.forEach(function (item) {
+        item.classList.remove('is-active');
+      });
+    }
+
+    function setActiveByHref(href) {
+      clearActive();
+      var target = document.querySelector('.navbar-item[href="' + href + '"]');
+      if (target) target.classList.add('is-active');
+    }
+
+    function updateActiveSection() {
+      var scroll = window.scrollY;
+      var sections = document.querySelectorAll('.hero[id]');
+
+      for (var i = 0; i < sections.length; i++) {
+        var section = sections[i];
+        var sectionTop = section.offsetTop - viewOffset;
+        var sectionBottom = section.offsetTop + section.offsetHeight - viewOffset;
+
+        if (scroll >= sectionTop && scroll < sectionBottom) {
+          var href = sectionMap[section.id];
+          if (href) setActiveByHref(href);
+          return;
+        }
+      }
+
+      setActiveByHref('/');
+    }
+
+    window.addEventListener('scroll', updateActiveSection);
+    updateActiveSection();
+  })();
+</script>
+<script src="{{ '/assets/js/particles.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/particles-init.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/reveal-up.js' | relative_url }}"></script>
+
+</html>

@@ -1,0 +1,34 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+    <div id="particles-js"></div>
+    <section class="hero is-fullheight has-text-centered has-background-black-ter">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1 is-uppercase has-text-weight-bold has-text-white">
+                    {{page.title}}
+                </h1>
+                <h3 class="is-uppercase has-text-weight-medium is-marginless has-text-grey-light">
+                    {{content}}
+                </h3>
+                <hr>
+                <div class="columns is-marginless is-inline-flex-desktop">
+                    <a href="{{ '/' | relative_url }}"
+                        class="button is-white column is-rounded is-outlined is-uppercase has-text-weight-normal">Home</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="{{ '/assets/js/particles.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/particles-init.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/reveal-up.js' | relative_url }}"></script>
+</body>
+
+</html>

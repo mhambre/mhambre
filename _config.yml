@@ -1,0 +1,81 @@
+markdown: kramdown
+
+url: 'https://matthewthe.dev'
+baseurl: ''
+
+title: Matthew Hambrecht
+description: Software Engineer • AI Infrastructure • Systems Engineering
+site-image: /assets/images/meta.jpg
+site-keywords: Matthew Hambrecht, Software Engineer, AI Infrastructure, Systems Engineering
+favicon-url: https://github.com/mhambre.png?size=64
+
+heroimage: https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1300&w=2000
+
+email: hambrechtmatt@gmail.com
+facebook_username: ''
+twitter_username: solareclipxe
+instagram_username: ''
+linkedin_username: matt-hambrecht
+github_username: mhambre
+youtube_channel_id: ''
+reddit_username: ''
+behance_username: ''
+dribbble_username: ''
+spotify_username: ''
+
+google-analytics: ''
+
+giscus:
+  enabled: true
+  repo: 'mhambre/mhambre'
+  repo_id: 'R_kgDOGRFoEg'
+  mapping: 'number'
+  term: ''
+  reactions_enabled: '1'
+  emit_metadata: '0'
+  input_position: 'bottom'
+  theme: 'dark_tritanopia'
+  lang: 'en'
+
+author-name: Matthew Hambrecht
+author-image: https://github.com/mhambre.png?size=300
+author-about: I build performant software across AI infrastructure, systems programming, and full-stack development. My work spans Rust/C low-level components, distributed backend services, and developer tooling that ships reliably in production.
+author-url: https://github.com/mhambre
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-feed
+
+permalink: 'blog/:title'
+
+compress_html:
+  clippings: all
+
+defaults:
+  -
+    scope:
+      type: 'posts'
+    values:
+      layout: post
+      post-image: ''
+      description: ''
+      tags:
+        - ''
+  -
+    scope:
+      type: 'pages'
+    values:
+      layout: page
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

@@ -1,0 +1,97 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+    <div id="particles-js"></div>
+    {% include navbar.html %}
+
+    <section class="hero is-fullheight" id="blog">
+        <div class="hero-body">
+            <div class="container">
+                {% include blogpage-heading.html %}
+            </div>
+        </div>
+        <!--Blog Cards Section-->
+        <div id="default-posts">
+            {% for post in site.posts %}
+                {% include blog-card.html %}
+            {% endfor %}
+        </div>
+        </div>
+    </section>
+    <br>
+    <!--Footer begins here-->
+    {% include footer.html %}
+    <script>
+        (function () {
+            const searchInput = document.getElementById('search-input');
+            const defaultPosts = document.getElementById('default-posts');
+            if (!searchInput || !defaultPosts) return;
+
+            const initialPostsHtml = defaultPosts.innerHTML;
+            let indexData = [];
+
+            function renderNoResults() {
+                defaultPosts.innerHTML = '<div class="subtitle has-text-centered is-uppercase">No Results Found</div><hr class="has-background-black" style="margin: 0.5rem 5rem 2.5rem 5rem">';
+            }
+
+            function renderPosts(posts) {
+                if (!posts.length) {
+                    renderNoResults();
+                    return;
+                }
+
+                defaultPosts.innerHTML = posts.map(function (post) {
+                    return '<div style="border: 0.15rem dashed black" class="searchResult columns has-text-centered" id="blog-card">' +
+                        '<div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet">' +
+                        '<div class="image is-16by9" style="background-image: url(' + post.image + ');"></div></div>' +
+                        '<a href="' + post.url + '"><div class="column has-text-left-desktop has-text-left-tablet">' +
+                        '<h1 class="title is-size-4-touch">' + post.title + '</h1>' +
+                        '<div class="content has-text-grey">' + post.content +
+                        '<hr class="has-background-grey"><span class="has-text-grey">Published on <span class="has-text-weight-semibold">' + post.date + '</span></span> | ' +
+                        '<i class="fas fa-clock"></i> <span class="has-text-weight-semibold">' + post.readtime + ' min</span> read' +
+                        '</div></div></a></div>';
+                }).join('');
+            }
+
+            function matches(post, query) {
+                const q = query.toLowerCase();
+                return (
+                    (post.title || '').toLowerCase().includes(q) ||
+                    (post.tags || '').toLowerCase().includes(q) ||
+                    (post.description || '').toLowerCase().includes(q) ||
+                    (post.content || '').toLowerCase().includes(q)
+                );
+            }
+
+            fetch('{{ '/search.json' | relative_url }}')
+                .then(function (response) { return response.json(); })
+                .then(function (data) { indexData = data || []; })
+                .catch(function () { indexData = []; });
+
+            searchInput.addEventListener('input', function () {
+                const query = this.value.trim();
+                if (!query) {
+                    defaultPosts.innerHTML = initialPostsHtml;
+                    return;
+                }
+
+                const results = indexData.filter(function (post) {
+                    return matches(post, query);
+                });
+                renderPosts(results);
+            });
+        })();
+    </script>
+    <script src="{{ '/assets/js/particles.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/particles-init.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/reveal-up.js' | relative_url }}"></script>
+</body>
+
+</html>

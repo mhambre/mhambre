@@ -1,0 +1,25 @@
+- name: Helios
+  current: true
+  image: https://github.com/mhambre/helios/blob/main/docs/static/logo.png?raw=true
+  link: https://github.com/mhambre/helios
+  description: From-scratch operating system initiative evolving Linux-hosted services into kernel-backed components through a portable system call abstraction layer.
+
+- name: Eaql
+  image: https://github.com/mhambre/eaql/raw/main/docs/images/logos/eaql-logo-white.svg
+  link: https://github.com/matthambrecht/eaql
+  description: English Augmented Query Language with a custom recursive-descent parser and transpilation engine for human-friendly querying workflows.
+
+- name: Mailbox
+  image: https://www.freeiconspng.com/thumbs/email-icon/file-tk-email-icon-svg-28.png
+  link: https://github.com/matthambrecht/Mailbox
+  description: Low-latency IPC library in C using POSIX shared memory and semaphores for efficient interprocess message passing.
+
+- name: FaceSync
+  image: https://icons.veryicon.com/png/o/miscellaneous/intelligent-city/face-recognition-9.png
+  link: https://github.com/matthambrecht/FaceSync
+  description: Real-time CCTV analytics with facial recognition and object tracking, optimized for fast alerting and operational monitoring.
+
+- name: Translite
+  image: https://github.com/mhambre/Translite/raw/main/docs/images/logo.png
+  link: https://github.com/matthambrecht/Translite
+  description: Modular multilingual translation tooling for low-resource environments with language detection and extensible pipelines.
