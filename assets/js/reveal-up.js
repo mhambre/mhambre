@@ -40,7 +40,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   );
 
-  nodes.forEach(function (node) {
-    observer.observe(node);
+  window.requestAnimationFrame(function () {
+    var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    nodes.forEach(function (node) {
+      var rect = node.getBoundingClientRect();
+      if (rect.top < viewportHeight * 0.9) {
+        node.classList.add('is-visible');
+      } else {
+        observer.observe(node);
+      }
+    });
   });
 });
