@@ -44,33 +44,21 @@ I am a software engineer specializing in systems programming, AI infrastructure,
 
 ---
 
-## Public Portfolio
+## Public Projects
 
-- Current Projects:
-  - **[async-fuser](https://github.com/mhambre/async-fuser)**: Tokio-based Rust library for building asynchronous Filesystem in Userspace (FUSE) applications.
-  - **[sparseio](https://github.com/mhambre/sparseio)**: Library for coordinating sparse, out-of-order, and concurrent byte-range fetching, caching, and materialization of large objects.
+#### Current
 
----
+- **[async-fuser](https://github.com/mhambre/async-fuser)**: Tokio-based Rust library for building asynchronous Filesystem in Userspace (FUSE) applications.
+- **[sparseio](https://github.com/mhambre/sparseio)**: Library for coordinating sparse, out-of-order, and concurrent byte-range fetching, caching, and materialization of large objects.
 
-- Featured Projects:
-  - **[Mailbox](https://github.com/mhambre/Mailbox)** (`C | POSIX | Systems Programming`): High-performance interprocess communication library using shared memory and semaphores for low-latency message passing.
-  - **[EAQL](https://github.com/mhambre/eaql)** (`Rust | Parsing | Compilers`): English-like query language built with a recursive-descent parser and transpilation engine.
-  - **[FaceSync](https://github.com/mhambre/FaceSync)** (`C++ | Computer Vision | Real-Time Systems`): Real-time CCTV video analysis system with facial recognition and object tracking, achieving sub-200ms alert times.
+#### Featured
 
----
+- **[Mailbox](https://github.com/mhambre/Mailbox)**: High-performance interprocess communication library using shared memory and semaphores for low-latency message passing.
+- **[EAQL](https://github.com/mhambre/eaql)**: English-like query language built with a recursive-descent parser and transpilation engine.
+- **[FaceSync](https://github.com/mhambre/FaceSync)**: Real-time CCTV video analysis system with facial recognition and object tracking, achieving sub-200ms alert times.
 
-- Additional Projects:
-  - **Translite**: Modular multilingual translation tool using TF-IDF and Naive Bayes.
-  - **PredEmotions**: Neural network for emotion-specific sentiment classification.
-  - **Scalpddit**: Reddit monitoring tool for real-time content tracking.
+#### Additional Projects
 
----
-
-## Open Source Interests
-
-- Filesystems and storage systems
-- Distributed systems and data-intensive platforms
-- AI infrastructure and model delivery systems
-- Performance optimization and benchmarking
-- Developer tooling and compilers
-- Cloud-native platforms and Kubernetes
+- **[Translite](https://github.com/mhambre/Translite)**: Modular multilingual translation tool using TF-IDF and Naive Bayes.
+- **[PredEmotions](https://github.com/mhambre/PredEmotions)**: Neural network for emotion-specific sentiment classification.
+- **[Scalpddit](https://github.com/mhambre/Scalpddit)**: Reddit monitoring tool for real-time content tracking.
