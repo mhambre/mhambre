@@ -38,7 +38,7 @@ I am a software engineer specializing in systems programming, AI infrastructure,
 ## Tooling and Stack
 
 - Languages: **Rust, Python, C, C++, Go, TypeScript, SQL, Bash**
-- Databases and Storage: **PostgreSQL, MySQL, Redis**
+- Databases and Storage: **PostgreSQL, MySQL, Redis, S3**
 - Systems and Tools: **Linux/RHEL, Git, REST APIs, WebSockets, GDB, JIRA**
 - Cloud and DevOps: **Docker, Kubernetes, GitHub Actions, GitLab CI/CD, Jenkins, PyTest, GoogleTest**
 
