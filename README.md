@@ -26,92 +26,51 @@
 
 I am a software engineer specializing in systems programming, AI infrastructure, and high-performance distributed systems. My work focuses on building scalable, efficient platforms for streaming, storage, and real-time data processing using Rust and modern cloud-native technologies.
 
-My primary interests include:
-
-- Distributed systems and performance engineering  
-- Systems programming in Rust, C, and C++  
-- AI infrastructure and developer tooling  
-- Cloud-native architectures and Kubernetes  
-- Concurrent and asynchronous I/O systems  
+- Primary interests:
+  - Distributed systems and performance engineering
+  - Systems programming in Rust, C, and C++
+  - AI infrastructure and developer tooling
+  - Cloud-native architectures and Kubernetes
+  - Concurrent and asynchronous I/O systems
 
 ---
 
-## Technical Skills
+## Tooling and Stack
 
-### Languages
-
-**Rust, Python, C, C++, Go, TypeScript, SQL, Bash**
-
-### Databases and Storage
-
-**PostgreSQL, MySQL, Redis**
-
-### Systems and Tools
-
-**Linux/RHEL, Git, REST APIs, WebSockets, GDB, JIRA**
-
-### Cloud and DevOps
-
-**Docker, Kubernetes, GitHub Actions, GitLab CI/CD, Jenkins, PyTest, GoogleTest**
+- Languages: **Rust, Python, C, C++, Go, TypeScript, SQL, Bash**
+- Databases and Storage: **PostgreSQL, MySQL, Redis**
+- Systems and Tools: **Linux/RHEL, Git, REST APIs, WebSockets, GDB, JIRA**
+- Cloud and DevOps: **Docker, Kubernetes, GitHub Actions, GitLab CI/CD, Jenkins, PyTest, GoogleTest**
 
 ---
 
 ## Public Portfolio
 
-### Current Projects
-
-#### async-fuser
-
-Tokio-based Rust library for building asynchronous Filesystem in Userspace (FUSE) applications.
-
-<https://github.com/mhambre/async-fuser>
-
-#### sparseio
-
-A library for efficiently coordinating sparse, out-of-order, and concurrent byte-range fetching, caching, and materialization of large objects.
-
-<https://github.com/mhambre/sparseio>
+- Current Projects:
+  - **[async-fuser](https://github.com/mhambre/async-fuser)**: Tokio-based Rust library for building asynchronous Filesystem in Userspace (FUSE) applications.
+  - **[sparseio](https://github.com/mhambre/sparseio)**: Library for coordinating sparse, out-of-order, and concurrent byte-range fetching, caching, and materialization of large objects.
 
 ---
 
-### Featured Projects
-
-#### Mailbox
-
-**C | POSIX | Systems Programming**  
-A high-performance interprocess communication (IPC) library using shared memory and semaphores for low-latency message passing.
-
-<https://github.com/mhambre/Mailbox>
-
-#### EAQL
-
-**Rust | Parsing | Compilers**  
-An English-like query language designed as a natural-language alternative to SQL, built with a recursive-descent parser and transpilation engine.  
-
-<https://github.com/mhambre/eaql>
-
-#### FaceSync
-
-**C++ | Computer Vision | Real-Time Systems**  
-A real-time CCTV video analysis system with facial recognition and object tracking, achieving sub-200ms alert times.
-
-<https://github.com/mhambre/FaceSync>
+- Featured Projects:
+  - **[Mailbox](https://github.com/mhambre/Mailbox)** (`C | POSIX | Systems Programming`): High-performance interprocess communication library using shared memory and semaphores for low-latency message passing.
+  - **[EAQL](https://github.com/mhambre/eaql)** (`Rust | Parsing | Compilers`): English-like query language built with a recursive-descent parser and transpilation engine.
+  - **[FaceSync](https://github.com/mhambre/FaceSync)** (`C++ | Computer Vision | Real-Time Systems`): Real-time CCTV video analysis system with facial recognition and object tracking, achieving sub-200ms alert times.
 
 ---
 
-### Additional Projects
-
-- **Translite** – Modular multilingual translation tool using TF-IDF and Naive Bayes.  
-- **PredEmotions** – Neural network for emotion-specific sentiment classification.  
-- **Scalpddit** – Reddit monitoring tool for real-time content tracking.
+- Additional Projects:
+  - **Translite**: Modular multilingual translation tool using TF-IDF and Naive Bayes.
+  - **PredEmotions**: Neural network for emotion-specific sentiment classification.
+  - **Scalpddit**: Reddit monitoring tool for real-time content tracking.
 
 ---
 
 ## Open Source Interests
 
-- Filesystems and storage systems  
-- Distributed systems and data-intensive platforms  
-- AI infrastructure and model delivery systems  
-- Performance optimization and benchmarking  
-- Developer tooling and compilers  
+- Filesystems and storage systems
+- Distributed systems and data-intensive platforms
+- AI infrastructure and model delivery systems
+- Performance optimization and benchmarking
+- Developer tooling and compilers
 - Cloud-native platforms and Kubernetes
