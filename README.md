@@ -48,17 +48,12 @@ I am a software engineer specializing in systems programming, AI infrastructure,
 
 #### Current
 
-- **[async-fuser](https://github.com/mhambre/async-fuser)**: Tokio-based Rust library for building asynchronous Filesystem in Userspace (FUSE) applications.
 - **[sparseio](https://github.com/mhambre/sparseio)**: Library for coordinating sparse, out-of-order, and concurrent byte-range fetching, caching, and materialization of large objects.
+- **[async-fuser](https://github.com/mhambre/async-fuser)**: Rust library extending the fuser crate with a native Tokio-based asynchronous API for building non-blocking FUSE filesystems.
 
 #### Featured
 
-- **[Mailbox](https://github.com/mhambre/Mailbox)**: High-performance interprocess communication library using shared memory and semaphores for low-latency message passing.
-- **[EAQL](https://github.com/mhambre/eaql)**: English-like query language built with a recursive-descent parser and transpilation engine.
-- **[FaceSync](https://github.com/mhambre/FaceSync)**: Real-time CCTV video analysis system with facial recognition and object tracking, achieving sub-200ms alert times.
+- **[mailbox](https://github.com/mhambre/mailbox)**: High-performance interprocess communication library using shared memory and semaphores for low-latency message passing.
+- **[EAQL](https://github.com/mhambre/eaql)**: Educational Rust query-language project showcasing tokenization, recursive-descent parsing, AST construction, and SQL transpilation.
+- **[FaceSync](https://github.com/mhambre/FaceSync)**: Real-time CCTV video analysis system with body detection, achieving sub-200ms alert times.
 
-#### Additional Projects
-
-- **[Translite](https://github.com/mhambre/Translite)**: Modular multilingual translation tool using TF-IDF and Naive Bayes.
-- **[PredEmotions](https://github.com/mhambre/PredEmotions)**: Neural network for emotion-specific sentiment classification.
-- **[Scalpddit](https://github.com/mhambre/Scalpddit)**: Reddit monitoring tool for real-time content tracking.

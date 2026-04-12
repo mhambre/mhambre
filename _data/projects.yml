@@ -2,7 +2,7 @@
   current: true
   image: https://cdn-icons-png.freepik.com/256/14704/14704526.png?semt=ais_white_label
   link: https://github.com/mhambre/async-fuser
-  description: Tokio-based Rust library for building asynchronous Filesystem in Userspace applications.
+  description: Rust library extending the fuser crate with a native Tokio-based asynchronous API for building non-blocking FUSE filesystems.
 
 - name: sparseio
   current: true
@@ -10,12 +10,12 @@
   link: https://github.com/mhambre/sparseio
   description: Sparse, concurrent byte-range fetching, caching, and materialization for large object workflows.
 
-- name: EAQL
+- name: eaql
   image: https://github.com/mhambre/eaql/raw/main/docs/images/logos/eaql-logo-white.svg
   link: https://github.com/mhambre/eaql
-  description: English-like query language built with a recursive-descent parser and transpilation engine.
+  description: Educational Rust project exploring tokenization, lexing, recursive-descent parsing, AST construction, and SQL transpilation through an English-like query language.
 
-- name: Mailbox
+- name: mailbox
   image: https://www.freeiconspng.com/thumbs/email-icon/file-tk-email-icon-svg-28.png
   link: https://github.com/mhambre/Mailbox
   description: High-performance IPC library using shared memory and semaphores for low-latency message passing.
@@ -23,9 +23,4 @@
 - name: FaceSync
   image: https://icons.veryicon.com/png/o/miscellaneous/intelligent-city/face-recognition-9.png
   link: https://github.com/mhambre/FaceSync
-  description: Real-time CCTV video analysis with facial recognition and object tracking and sub-200ms alert times.
-
-- name: Translite
-  image: https://github.com/mhambre/Translite/raw/main/docs/images/logo.png
-  link: https://github.com/mhambre/Translite
-  description: Modular multilingual translation tool using TF-IDF and Naive Bayes for low-resource environments.
+  description: Real-time CCTV video analysis with body object detection and sub-200ms alert times.
